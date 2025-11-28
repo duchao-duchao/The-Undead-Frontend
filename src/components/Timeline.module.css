@@ -1,0 +1,72 @@
+.timeline {
+  position: relative;
+  margin-top: 40px;
+  padding: 24px 0;
+}
+
+ .rail {
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--neon), rgba(0,255,65,0.05));
+}
+
+ .item {
+  position: relative;
+  margin-left: 56px;
+  margin-bottom: 18px;
+}
+
+ .card {
+  border: var(--brutal-border) solid var(--text);
+  box-shadow: var(--brutal-shadow-x) var(--brutal-shadow-y) 0 #111;
+  background: #0a0a0a;
+  padding: 16px 16px 14px;
+}
+
+ .dot {
+  position: absolute;
+  left: -32px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--text);
+  background: var(--neon);
+  box-shadow: 0 0 12px rgba(0,255,65,.6);
+}
+
+ .year {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--neon);
+  font-weight: 800;
+  letter-spacing: .5px;
+}
+
+ .title {
+  margin: 8px 0 6px;
+  font-weight: 700;
+}
+
+ .report {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+ .label {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+ @media (max-width: 640px) {
+  .rail { left: 16px; }
+  .item { margin-left: 48px; }
+  .dot { left: -28px; }
+}
