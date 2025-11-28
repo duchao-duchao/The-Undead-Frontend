@@ -1,17 +1,15 @@
 import Hero from "./components/Hero";
 import Timeline from "./components/Timeline";
 import Graveyard from "./components/Graveyard";
+import Danmaku from "./components/Danmaku";
 
 function App() {
   return (
     <main>
+      <Danmaku auto />
       <Hero />
       <Timeline />
       <Graveyard />
-      <footer style={{ marginTop: 36, textAlign: "center", color: "var(--muted)", fontSize: 12 }}>
-        This site is built with React, bundled by Vite, styled with Tailwind,
-        and animated by Framer Motion, just to render some static text. Frontend is simple, right?
-      </footer>
     </main>
   );
 }

@@ -1,0 +1,68 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.item {
+  position: absolute;
+  left: 100%;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 1;
+  padding: 4px 10px;
+  border: var(--brutal-border) solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--brutal-shadow-x) var(--brutal-shadow-y) 0 rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(2px);
+  will-change: transform;
+}
+
+.neon {
+  color: var(--neon);
+  text-shadow: 0 0 8px rgba(0, 255, 65, 0.6), 0 0 18px rgba(0, 255, 65, 0.35);
+  border-color: rgba(0, 255, 65, 0.25);
+}
+
+.danger {
+  color: var(--danger);
+  text-shadow: 0 0 8px rgba(255, 0, 85, 0.6), 0 0 18px rgba(255, 0, 85, 0.35);
+  border-color: rgba(255, 0, 85, 0.25);
+}
+
+.sendBar {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border: var(--brutal-border) solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--brutal-shadow-x) var(--brutal-shadow-y) 0 rgba(255, 255, 255, 0.08);
+  pointer-events: auto;
+  z-index: 1000;
+}
+
+.input {
+  width: 220px;
+  padding: 6px 8px;
+  border: var(--brutal-border) solid rgba(255, 255, 255, 0.2);
+  background: #0c0c0c;
+  color: var(--text);
+  outline: none;
+}
+
+.button {
+  padding: 6px 12px;
+  border: var(--brutal-border) solid rgba(0, 255, 65, 0.6);
+  background: #101010;
+  color: var(--neon);
+  cursor: pointer;
+  box-shadow: var(--brutal-shadow-x) var(--brutal-shadow-y) 0 rgba(0, 255, 65, 0.2);
+}
+.button:hover {
+  filter: brightness(1.2);
+}
